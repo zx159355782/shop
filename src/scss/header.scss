@@ -1,0 +1,48 @@
+.header {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: $color1;
+  padding: 0.5rem 5rem;
+  font-size: 1.5rem;
+  box-shadow: 0 1rem 2rem $color2;
+  margin-bottom: $gutter;
+  z-index: 9999;
+
+  &-logo {
+    flex: 0 0 20%;
+
+    &-img {
+      height: 6rem;
+      border-radius: 50%;
+      border: 2px solid $color4;
+    }
+  }
+
+  &-menu {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: space-around;
+    font-weight: 600;
+  }
+
+  &-menu a {
+    color: $color5;
+  }
+}
+
+.sign {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  color: $color5;
+  font-weight: 600;
+  font-size: 1.3rem;
+
+  & i {
+    color: red;
+  }
+}

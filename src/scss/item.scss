@@ -1,0 +1,89 @@
+.hots {
+  width: 90%;
+  margin: auto;
+  margin-bottom: $gutter;
+  text-align: center;
+  &-title {
+    text-align: center;
+    font-size: 2.4rem;
+    color: $color5;
+    margin-bottom: $gutter;
+  }
+
+  &-btn {
+    display: inline-block;
+    border: 2px solid $color4;
+    margin: auto;
+    font-size: 1.6rem;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: 600;
+    color: $color5;
+    background-color: $color1;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color5;
+      color: $color1;
+    }
+  }
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  text-align: center;
+  font-size: 1.6rem;
+}
+
+.item {
+  flex: 0 0 26%;
+  border: 2px solid $color4;
+  transition: all 0.2s;
+  margin-bottom: $gutter;
+  padding-bottom: 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+  overflow: hidden;
+  &-photo {
+    width: 100%;
+  }
+  &-name {
+    color: $color5;
+  }
+  &-price {
+    color: rgba(255, 0, 0, 0.705);
+  }
+
+  &-name,
+  &-price {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0.5rem 0;
+  }
+
+  &-add {
+    cursor: pointer;
+    background-color: #fff;
+    color: $color5;
+    font-weight: 600;
+    border: 1px solid $color5;
+    padding: 0.5rem;
+    transition: all 0.2s;
+
+    &:hover {
+      background-color: $color5;
+      color: #fff;
+    }
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 1rem 1rem $color4;
+  }
+}
+
+.products {
+  width: 70%;
+  margin: auto;
+}

@@ -1,0 +1,62 @@
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-image: linear-gradient(
+    to bottom right,
+    #c4c5c7 0%,
+    #dcdddf 52%,
+    #ebebeb 100%
+  );
+  height: 40vh;
+  padding: 2rem;
+
+  &-left ul li {
+    font-size: 2rem;
+    padding: 2rem;
+    & a {
+      color: $color5;
+      font-weight: 600;
+    }
+  }
+
+  &-right ul li {
+    font-size: 4rem;
+    margin: 1rem;
+    color: $color5;
+    transition: all 0.2s;
+
+    &.ig {
+      transition: background-image 0.2s;
+    }
+    &.ig:hover {
+      background-image: linear-gradient(
+        to right top,
+        #405de6,
+        #5851db,
+        #833ab4,
+        #c13584,
+        #e1306c,
+        #fd1d1d,
+        #f56040,
+        #f77737,
+        #fcaf45,
+        #ffdc80
+      );
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    &.line:hover {
+      color: #00b900;
+    }
+    &.fb:hover {
+      color: #4267b2;
+    }
+  }
+}
+
+.copyright {
+  background-color: #000;
+  color: $color4;
+  text-align: center;
+}
